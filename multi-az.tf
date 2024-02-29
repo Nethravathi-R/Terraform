@@ -7,7 +7,7 @@ provider "aws" {
     alias = "virginia"
   
 }
-resource "aws_instance" "ec2-mumbai" {
+resource "aws_instance" "firstInstance" {
  ami ="ami-05ff0b3a7128cd6f8"
  instance_type ="t2.micro"  
  tags = {
