@@ -6,7 +6,7 @@ resource "aws_instance" "example" {
     ami = "ami-03bb6d83c60fc5f7c"
     instance_type = "t2.micro"
     key_name = "aws key"
-   
+    associate_public_ip_address = true //to see attach public ip to instance
     subnet_id = aws_subnet.my_subnet.id
     vpc_security_group_ids = [ aws_security_group.demo-vpc-sg.id ]
   
